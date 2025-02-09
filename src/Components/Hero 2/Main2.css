@@ -1,0 +1,26 @@
+
+  .bg-image {
+    width: 100%;
+    /* max-width: 1200px;  */
+    display: block;
+    margin: 20px auto;
+  }
+  
+
+  .description{
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    justify-content:space-around;  
+    align-items: center;
+    gap: 20px;               
+    flex-wrap: wrap;     
+    
+
+    margin: 20px auto 0 auto; 
+margin-bottom: 40px;
+  }
+ 

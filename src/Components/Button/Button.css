@@ -1,0 +1,25 @@
+.red{
+    background-color: red;
+    color: #fcfcfc;
+    padding: 12px 20px;
+    border-radius: 18px;
+}
+.white{
+   background-color: #fcfcfc;
+   color: black;
+   padding: 12px 20px;
+   border-radius: 18px;
+   display: flex;
+   align-items: center;
+   gap: 2px;
+   font-weight: 800;
+   
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}

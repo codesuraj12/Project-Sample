@@ -1,0 +1,36 @@
+import React from 'react'
+import { useState } from 'react';
+import './Nav.css'
+import { GiHamburgerMenu } from "react-icons/gi";
+
+
+const Nav = () => {
+const [isopen, setIsopen] = useState(false)
+
+const toggle=()=>{
+  setIsopen(prevState => !prevState)
+ 
+}
+
+  return (
+
+    <div className="header">
+
+      <ul className={`nav-links ${isopen ? 'active': '' }`}>
+        <li>
+          <img src="src/assets/logo.png" alt="logo" />
+        </li>
+        <li>Home</li>
+        <li>Products</li>
+        <li>Resources</li>
+        <li>Pricing</li>
+
+      </ul>
+      <img src="src/assets/profiles.png" alt="profile" className='profile-img' />
+   <GiHamburgerMenu onClick={toggle} className='hamburger-menu' />
+    </div>
+
+  )
+}
+
+export default Nav

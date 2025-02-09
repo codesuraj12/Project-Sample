@@ -1,0 +1,22 @@
+*{
+  font-family:  sans-serif;
+}
+
+
+.divider {
+  border: none;
+  height: 2px; /* Adjust thickness */
+  background-color: #2b27274f; /* Adjust color */
+  margin: 20px 0; /* Add space above and below */
+  width: 100%; /* Full width */
+}
+.space{
+  margin-top: 100px;
+}
+
+.bar{
+  width: 100%;
+  background-color: black;
+  margin-top: 10px;
+  height: 1px;
+}
