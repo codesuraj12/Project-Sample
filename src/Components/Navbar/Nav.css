@@ -35,21 +35,30 @@ ul {
 
   @media screen and (max-width: 768px) {
     
-    .nav-links li:not(:first-child) {
+    .nav-links {
       display: none;
+      position: absolute;
+      top: 6px;/* Position it below the header (adjust as needed) */
+      right: 0;
+      flex-direction: column;
+      background: transparent #b6b4b4;
+      height: 100vh;
+      padding: 10px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+      width: 200px;
+    
     }
     
-    /* Hide the profile image */
-    .profile-img {
-      display: none;
-    }
-    
-    /* Show the hamburger menu */
+    /* Show hamburger icon on mobile */
     .hamburger-menu {
       display: block;
+     
+      z-index: 1
     }
+    
+    /* When active, show the nav links dropdown */
     .nav-links.active {
       display: flex;
-      flex-direction: column;
     }
+  
   }
