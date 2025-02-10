@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import './Nav.css'
 import { GiHamburgerMenu } from "react-icons/gi";
+import Logo from '/src/assets/logo.png'
+import Profile from '/src/assets/profiles.png'
 
 
 const Nav = () => {
@@ -18,7 +20,7 @@ const toggle=()=>{
 
       <ul className={`nav-links ${isopen ? 'active': '' }`}>
         <li>
-          <img src="src/assets/logo.png" alt="logo" />
+          <img src= {Logo} alt="logo" />
         </li>
         <li>Home</li>
         <li>Products</li>
@@ -26,7 +28,7 @@ const toggle=()=>{
         <li>Pricing</li>
 
       </ul>
-      <img src="src/assets/profiles.png" alt="profile" className='profile-img' />
+      <img src={Profile} alt="profile" className='profile-img' />
    <GiHamburgerMenu onClick={toggle} className='hamburger-menu' />
     </div>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { FaRegCopyright } from "react-icons/fa";
-
+import Logo from '/src/assets/logo.png'
 
 
 const Footer = () => {
@@ -55,7 +55,7 @@ const Footer = () => {
     </div>
         <hr className='divider' />
         <div className="last">
-            <img src="src/assets/logo.png" alt="logo" />
+            <img src={Logo} alt="logo" />
            <span style={{display:'flex',alignItems:'center', gap:'2px'}}> <FaRegCopyright /> All rights reserved</span>
         </div>
         </>
